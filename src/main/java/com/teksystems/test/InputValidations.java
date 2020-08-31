@@ -53,7 +53,7 @@ public class InputValidations {
 				System.out.println("Test-2: no special characters - Passed");
 			}
 
-			if (!input.matches("^[a-z A-Z]+(-[a-z A-Z]+)?$")) {
+			if (!input.matches("^[a-z A-Z 0-9 $&+,:;=\\\\\\\\?@#|/'<>.^*()%!_]+(-[a-z A-Z 0-9 $&+,:;=\\\\\\\\?@#|/'<>.^*()%!_]+)?$")) {
 				System.out.println("Test-3: country name cannot start/end or have multiple hyphens(-) - Failed");
 				isInputValid = false;
 			} else {
